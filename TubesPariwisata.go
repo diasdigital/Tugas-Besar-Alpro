@@ -433,7 +433,7 @@ func menuPrint(T tabWisata, n int) {
 			printArrwisata(T, n)
 
 			for !inputValid {
-				fmt.Println("\n=========================================")
+				fmt.Println("=========================================")
 				fmt.Println("1. Mencari berdasarkan nama")
 				fmt.Println("2. Mencari berdasarkan lokasi")
 				fmt.Println("3. Mencari berdasarkan harga")
@@ -461,21 +461,21 @@ func menuPrint(T tabWisata, n int) {
 				case "3":
 					cetakByHarga(T, n)
 				case "4":
-					fmt.Println("Data terurut ascending berdasarkan nama...")
 					urutDataNama(&T, n, "naik")
 					printArrwisata(T, n)
+					fmt.Println("\nData terurut ascending berdasarkan nama")
 				case "5":
-					fmt.Println("Data terurut descending berdasarkan nama...")
 					urutDataNama(&T, n, "turun")
 					printArrwisata(T, n)
+					fmt.Println("\nData terurut descending berdasarkan nama")
 				case "6":
-					fmt.Println("Data terurut ascending berdasarkan harga...")
 					urutDataHarga(&T, n, "naik")
 					printArrwisata(T, n)
+					fmt.Println("\nData terurut ascending berdasarkan harga")
 				case "7":
-					fmt.Println("Data terurut descending berdasarkan harga...")
 					urutDataHarga(&T, n, "turun")
 					printArrwisata(T, n)
+					fmt.Println("\nData terurut descending berdasarkan harga")
 				case "0":
 					lanjut = false
 					inputValid = true
