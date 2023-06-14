@@ -192,7 +192,7 @@ func findNama(T tabWisata, n int, keyword string) int {
 		} else if T[tengah].nama > keyword {
 			kanan = tengah - 1
 		} else {
-			idx = tengah
+			return tengah
 		}
 	}
 	return idx
